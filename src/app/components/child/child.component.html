@@ -1,0 +1,7 @@
+<div class="control-elements">
+    <input type="text" [(ngModel)]="simpleText"/>
+    <button (click)="clearText()">Clear text</button>
+</div>
+<div class="display-area">
+    <p [innerText]="composedText"></p>
+</div>

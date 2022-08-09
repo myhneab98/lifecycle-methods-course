@@ -1,0 +1,27 @@
+:host {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 30% 1fr;
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+
+    .action-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-left: 35%;
+
+        button {
+            font-size: 22px;
+            font-weight: 500;
+        }
+    }
+
+    app-child {
+        width: 70%;
+        height: 70%;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+}

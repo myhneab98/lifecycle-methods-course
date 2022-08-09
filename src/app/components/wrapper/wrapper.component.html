@@ -1,0 +1,9 @@
+<div class="action-buttons">
+    <button (click)="modifyInput()">Modify the input</button>
+    <button (click)="toggleChildComponent()">Toggle child component</button>
+</div>
+<app-child *ngIf="showChildComponent; else noChildComponent" [someTrigger]="someValue" (onDestroyEvent)="handleChildDestroy($event)"></app-child>
+
+<ng-template #noChildComponent>
+    {{ messageFromChild }}
+</ng-template>
